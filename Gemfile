@@ -3,8 +3,9 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.0'
 
 # Database drivers:
-# gem 'sqlite3'
+gem 'sqlite3'
 gem 'mongoid'
+gem 'bson_ext'
 
 gem 'haml-rails'
 
@@ -35,6 +36,7 @@ group :development, :test do
   gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'rspec-rails'
   gem 'cucumber-rails'
+  gem 'heroku'
 end
 
 group :test do
