@@ -25,19 +25,22 @@ gem 'jquery-rails'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the web server
-gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
+group :development do
+  # Use unicorn as the web server
+  gem 'unicorn'
+end
 
 group :development, :test do
-  # To use debugger
   gem 'pry'
   gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'rspec-rails'
   gem 'cucumber-rails'
+end
+
+group :test do
+
+end
+
+group :production do
+  gem 'pg' # for Heroku
 end
