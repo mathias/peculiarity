@@ -62,6 +62,7 @@ module Peculiarity
         require 'pry'
         IRB = Pry
       rescue LoadError
+      end
     end
   end
 end
