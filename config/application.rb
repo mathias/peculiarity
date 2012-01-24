@@ -55,5 +55,13 @@ module Peculiarity
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Use Pry:
+    silence_warnings do
+      begin
+        require 'pry'
+        IRB = Pry
+      rescue LoadError
+    end
   end
 end
