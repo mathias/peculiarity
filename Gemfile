@@ -6,9 +6,11 @@ gem 'rails', '3.2.0'
 gem 'mongoid'
 gem 'bson_ext'
 
+# Gems used in all enironments:
+gem 'devise'
 gem 'haml-rails'
-
 gem 'newrelic_rpm'
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 
 # Gems used only for assets and not required
 # in production environments by default.
