@@ -29,7 +29,7 @@ gem 'jquery-rails'
 
 group :development do
   # Use unicorn as the web server
-  gem 'unicorn'
+  gem 'thin'
 end
 
 group :development, :test do
