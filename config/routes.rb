@@ -1,3 +1,3 @@
 Peculiarity::Application.routes.draw do
-  root :to => 'sign_up#index'
+  root :to => 'page#index'
 end
