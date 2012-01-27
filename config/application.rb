@@ -56,6 +56,10 @@ module Peculiarity
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
+    # Set your application to not access the DB or load models when precompiling your assets.
+    # Necessary for Rails >3.1 && Heroku
+    config.assets.initialize_on_precompile = false
+
     # Use Pry:
     silence_warnings do
       begin
