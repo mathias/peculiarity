@@ -8,6 +8,7 @@ gem 'bson_ext'
 
 # Gems used in all enironments:
 gem 'devise'
+gem 'fastercsv'
 gem 'haml-rails'
 gem 'newrelic_rpm'
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
