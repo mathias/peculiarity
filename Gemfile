@@ -11,7 +11,6 @@ gem 'devise'
 gem 'fastercsv'
 gem 'haml-rails'
 gem 'newrelic_rpm'
-gem 'puma' # http://i.imgur.com/jI2Ek.jpg
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 
 # Gems used only for assets and not required
@@ -32,6 +31,7 @@ gem 'jquery-rails'
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
 group :development do
+  gem 'puma' # http://i.imgur.com/jI2Ek.jpg
 end
 
 group :development, :test do
