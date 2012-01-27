@@ -30,13 +30,11 @@ gem 'jquery-rails'
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
 group :development do
-  # Use unicorn as the web server
-  gem 'thin'
+  gem 'puma' # http://i.imgur.com/jI2Ek.jpg
 end
 
 group :development, :test do
   gem 'pry'
-  gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'cucumber-rails'
