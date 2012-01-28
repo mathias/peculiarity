@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.1'
 
 gem 'devise'
+gem 'haml-rails'
 gem 'jquery-rails'
 gem 'newrelic_rpm'
 gem 'pg'

@@ -94,6 +94,11 @@ GEM
     gherkin (2.7.6)
       json (>= 1.4.6)
     haml (3.1.4)
+    haml-rails (0.3.4)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      haml (~> 3.0)
+      railties (~> 3.0)
     hike (1.2.1)
     hpricot (0.8.6)
     i18n (0.6.0)
@@ -214,6 +219,7 @@ DEPENDENCIES
   cucumber-rails
   database_cleaner
   devise
+  haml-rails
   jquery-rails
   newrelic_rpm
   pg
