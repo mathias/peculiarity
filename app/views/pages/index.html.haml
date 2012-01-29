@@ -1,0 +1,17 @@
+.row
+  .twelve.columns
+    %h1
+      =link_to 'Peculiarity', root_path
+    #index_slider{:style => "height:380px; overflow:hidden"}
+      %img{:src => "http://lorempixel.com/980/400/city"}
+      %img{:src => "http://lorempixel.com/980/400/food"}
+      %img{:src => "http://lorempixel.com/980/400/nightlife"}
+    %h4 Heading
+    %p Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit
+.row
+  .four.columns.panel.centered
+    %form.nice
+      %label{}
+        Enter your email address:
+      %input{:type => "text", :class => "oversize input-text"}
+      =submit_tag("Go »", {:class => "large nice blue button radius"})
