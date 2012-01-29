@@ -20,6 +20,10 @@ group :assets do
   gem 'zurb-foundation'
 end
 
+group :development do
+  gem 'heroku'
+end
+
 group :development, :test do
   gem 'cucumber-rails'
   gem 'rspec-rails'
