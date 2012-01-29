@@ -13,15 +13,17 @@
     .container
       = yield
       %footer.row
-        .two.columns
+        .three.columns
           %span
             &copy;
             %a{:href => "http://github.com/mathias"}
               Matt Gauger
             2012.
-        .four.columns
+        .three.columns
           %span
             Peculiarity is open source.
             %br/
             %a{:href => "https://github.com/mathias/peculiarity"}
               Clone it on Github.
+        .three.columns
+          =link_to("About", about_path)
