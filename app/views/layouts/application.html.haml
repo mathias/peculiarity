@@ -12,3 +12,16 @@
       #alert #{flash[:alert]}
     .container
       = yield
+      %footer.row
+        .two.columns
+          %span
+            &copy;
+            %a{:href => "http://github.com/mathias"}
+              Matt Gauger
+            2012.
+        .four.columns
+          %span
+            Peculiarity is open source.
+            %br/
+            %a{:href => "https://github.com/mathias/peculiarity"}
+              Clone it on Github.
