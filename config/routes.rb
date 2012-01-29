@@ -3,5 +3,6 @@ Peculiarity::Application.routes.draw do
 
   devise_for :users
 
-  root :to => 'page#index'
+  root :to => "pages#index"
+  match "about" => "pages#about"
 end

@@ -1,4 +1,4 @@
-# RailsAdmin config file. Generated on January 24, 2012 21:53
+# RailsAdmin config file. Generated on January 28, 2012 17:32
 # See github.com/sferik/rails_admin for more informations
 
 RailsAdmin.config do |config|
@@ -8,13 +8,13 @@ RailsAdmin.config do |config|
   # I18n.default_locale = :de
 
   config.current_user_method { current_user } # auto-generated
-
+  
   # If you want to track changes on your models:
   # config.audit_with :history, User
-
+  
   # Or with a PaperTrail: (you need to install it first)
   # config.audit_with :paper_trail, User
-
+  
   # Set the admin name here (optional second array element will appear in a beautiful RailsAdmin red ©)
   config.main_app_name = ['Peculiarity', 'Admin']
   # or for a dynamic name:
