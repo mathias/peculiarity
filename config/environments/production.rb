@@ -23,6 +23,9 @@ Peculiarity::Application.configure do
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
 
+  # Don't blow up on Heroku by compiling assets
+  config.assets.precompile += ["rails_admin/rails_admin.js", "rails_admin/rails_admin.css", "rails_admin/jquery.colorpicker.js", "rails_admin/jquery.colorpicker.css"]
+
   # Specifies the header that your server uses for sending files
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
