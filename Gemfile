@@ -21,10 +21,10 @@ group :assets do
 end
 
 group :development, :test do
-  gem 'ruby-debug19', :require => 'ruby-debug'
-  gem 'rspec-rails'
   gem 'cucumber-rails'
-  gem 'spork'
+  gem 'rspec-rails'
+  gem 'ruby-debug19', :require => 'ruby-debug'
+  gem 'spork-rails'
 end
 
 group :test do
