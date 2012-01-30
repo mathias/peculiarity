@@ -1,0 +1,15 @@
+.row
+  .four.columns.centered.panel
+    %h4 View your beta status
+    %p#notice= notice
+    %ul
+      %li
+        %strong Email address:
+        = @beta_sign_up.email_address
+      %li
+        %strong Signed up on:
+        = @beta_sign_up.created_at
+
+.row
+  .eight.columns
+    = link_to 'Back', root_path

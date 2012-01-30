@@ -3,5 +3,5 @@ Then /^I should see a short description$/ do
 end
 
 Then /^I should see the beta sign up form$/ do
- page.find("form#sign_up").should be_true
+  page.find("form#sign_up").should be_true
 end

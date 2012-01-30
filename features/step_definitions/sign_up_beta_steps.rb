@@ -11,5 +11,5 @@ When /^I submit the beta sign up form$/ do
 end
 
 Then /^I should be on the beta sign up confirmation page$/ do
-  current_path.should =~ /beta/
+  current_path.should == beta_sign_up_path(BetaSignUp.last)
 end

@@ -1,0 +1,13 @@
+= form_for @beta_sign_up do |f|
+  -if @beta_sign_up.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@beta_sign_up.errors.count, "error")} prohibited this beta_sign_up from being saved:"
+      %ul
+        - @beta_sign_up.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :email_address
+    = f.text_field :email_address
+  .actions
+    = f.submit 'Go'
