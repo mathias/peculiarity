@@ -7,13 +7,14 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    - if flash[:notice] || flash[:alert]
-      #notice #{flash[:notice]}
-      #alert #{flash[:alert]}
     .container
       %header.row
         .twelve.columns
           %h1=link_to 'Peculiarity', root_path
+          - if flash[:notice]
+            .alert-box=flash[:notice]
+          - if flash[:alert]
+            .alert-box.error=flash[:alert]
       = yield
       %p
       %footer.row
