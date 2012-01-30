@@ -1,6 +1,6 @@
 When /^I fill in the beta sign up form$/ do
   within('form#sign_up') do
-    fill_in "email_address", :with => "user@example.org"
+    fill_in "beta_sign_up_email_address", :with => "user@example.org"
   end
 end
 
