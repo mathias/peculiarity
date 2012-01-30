@@ -11,6 +11,9 @@
       #notice #{flash[:notice]}
       #alert #{flash[:alert]}
     .container
+      %header.row
+        .twelve.columns
+          %h1=link_to 'Peculiarity', root_path
       = yield
       %p
       %footer.row

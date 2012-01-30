@@ -1,7 +1,5 @@
 .row
   .twelve.columns
-    %h1
-      =link_to 'Peculiarity', root_path
     #index_slider{:style => "height:380px; overflow:hidden"}
       %img{:src => "http://lorempixel.com/980/400/city"}
       %img{:src => "http://lorempixel.com/980/400/food"}
@@ -21,7 +19,8 @@
     %p Browse recent check ins, or search among the most popular places.
 .row
   .four.columns.panel.centered
-    %p Sign up to receive more information.
+    %p
+      %strong Sign up to receive more information.
     %form.nice
       %label{}
         Enter your email address:
