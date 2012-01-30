@@ -7,8 +7,8 @@ describe BetaSignUpsController do
       get("/beta_sign_ups/new").should route_to("beta_sign_ups#new")
     end
 
-    it "routes to #show" do
-      get("/beta_sign_ups/1").should route_to("beta_sign_ups#show", :id => "1")
+    it "routes to #confirm" do
+      get("/beta_sign_up/confirm").should route_to("beta_sign_ups#confirm")
     end
 
     it "routes to #create" do

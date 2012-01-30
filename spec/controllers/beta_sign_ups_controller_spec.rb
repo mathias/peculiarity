@@ -34,14 +34,6 @@ describe BetaSignUpsController do
     {}
   end
 
-  describe "GET show" do
-    it "assigns the requested beta_sign_up as @beta_sign_up" do
-      beta_sign_up = BetaSignUp.create! valid_attributes
-      get :show, {:id => beta_sign_up.to_param}, valid_session
-      assigns(:beta_sign_up).should eq(beta_sign_up)
-    end
-  end
-
   describe "GET new" do
     it "assigns a new beta_sign_up as @beta_sign_up" do
       get :new, {}, valid_session
@@ -65,7 +57,7 @@ describe BetaSignUpsController do
 
       it "redirects to the created beta_sign_up" do
         post :create, {:beta_sign_up => valid_attributes}, valid_session
-        response.should redirect_to(BetaSignUp.last)
+        response.should redirect_to(beta_sign_up_confirm_path)
       end
     end
 
@@ -77,11 +69,11 @@ describe BetaSignUpsController do
         assigns(:beta_sign_up).should be_a_new(BetaSignUp)
       end
 
-      it "re-renders the 'new' template" do
+      it "redirects back to the home page (where the form lives)" do
         # Trigger the behavior that occurs when invalid params are submitted
         BetaSignUp.any_instance.stub(:save).and_return(false)
         post :create, {:beta_sign_up => {}}, valid_session
-        response.should render_template("new")
+        response.should redirect_to(root_path)
       end
     end
   end
