@@ -1,10 +1,8 @@
 Feature: Pages
-  In order to get some information about the site
-  As a user
-  I want to see informational content on the static pages
+  As a potential user of the site, I want to see some informational pages
 
-  Scenario: User can load home page
-    Given I am on the home page
+  Scenario: User can visit home page
+    Given I am on the homepage
     Then I should see "Peculiarity"
     And I should see a short description
     And I should see a sign up form
