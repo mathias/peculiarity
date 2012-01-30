@@ -1,4 +1,6 @@
 class BetaSignUp < ActiveRecord::Base
-  validates_presence_of :email_address
-  validates_uniqueness_of :email_address
+  validates :email_address,
+    :presence => true,
+    :uniqueness => true,
+    :format => { :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i }
 end

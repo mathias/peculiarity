@@ -1,6 +1,16 @@
+Given /^I am on the beta sign up confirmation page$/ do
+  visit(beta_sign_up_confirm_path)
+end
+
 When /^I fill in the beta sign up form$/ do
   within('form#sign_up') do
     fill_in "beta_sign_up_email_address", :with => "user@example.org"
+  end
+end
+
+When /^I fill in the beta sign up form with an invalid email address$/ do
+  within('form#sign_up') do
+    fill_in "beta_sign_up_email_address", :with => "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa!" # An attempt at a regex fuzzing attack
   end
 end
 
