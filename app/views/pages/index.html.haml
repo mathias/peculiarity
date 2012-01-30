@@ -15,14 +15,10 @@
     %p Ratings on Peculiarity teach the system what kinds of places you like. Ratings also determine what's popular and recommended in your area.
   .four.columns
     %h4 Discover
-    %p Use the geofence feature to find relevant places around you. Peculiarity learns what you like and don't like, and uses that information to recommend places based on others' ratings.
+    %p Use Peculiarity to find relevant places around you. Peculiarity learns what you like and don't like, and uses that information to recommend places based on others' ratings.
     %p Browse recent check ins, or search among the most popular places.
 .row
   .four.columns.panel.centered
     %p
       %strong Sign up to receive more information.
-    %form.nice#sign_up
-      %label{}
-        Enter your email address:
-      %input{:type => "text", :class => "oversize input-text", :name => "email_address"}
-      =submit_tag("Go", {:class => "large nice blue button radius"})
+    = render 'beta_sign_ups/form'
