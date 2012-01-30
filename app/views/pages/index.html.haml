@@ -24,5 +24,5 @@
     %form.nice#sign_up
       %label{}
         Enter your email address:
-      %input{:type => "text", :class => "oversize input-text"}
-      =submit_tag("Go »", {:class => "large nice blue button radius"})
+      %input{:type => "text", :class => "oversize input-text", :name => "email_address"}
+      =submit_tag("Go", {:class => "large nice blue button radius"})
