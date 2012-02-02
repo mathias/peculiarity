@@ -21,6 +21,7 @@ end
 
 group :development do
   gem 'heroku'
+  gem 'heroku_san'
 end
 
 group :development, :test do
