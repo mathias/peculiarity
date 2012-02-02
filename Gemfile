@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
 
+gem 'cancan'
 gem 'devise'
 gem 'haml-rails'
 gem 'jquery-rails'

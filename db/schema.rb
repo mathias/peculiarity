@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120130023849) do
+ActiveRecord::Schema.define(:version => 20120202043117) do
 
   create_table "beta_sign_ups", :force => true do |t|
     t.string   "email_address"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(:version => 20120130023849) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.string   "role"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
