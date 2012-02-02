@@ -2,6 +2,10 @@ Given /^I am on the homepage$/ do
   visit(root_path)
 end
 
+When /^I go to an invalid path$/ do
+  visit('/foobar')
+end
+
 Then /^I should see "([^"]*)"$/ do |content|
   # page.find(element).should be_true
   has_content?(content).should be_true
