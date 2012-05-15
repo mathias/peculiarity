@@ -8,7 +8,6 @@ gem 'haml-rails'
 gem 'jquery-rails'
 gem 'newrelic_rpm'
 gem 'pg'
-gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 gem 'thin'
 
 # Gems used only for assets and not required
