@@ -36,6 +36,3 @@
           =link_to("About", about_path)
         .one.columns
           =link_to("Support", "https://github.com/mathias/peculiarity/issues")
-        .one.columns
-          - if current_user && current_user.admin?
-            =button_to("Admin", rails_admin_path, {:method => :get, :class => "red round button"})
