@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.1'
+gem 'rails', '3.2.3'
 
 gem 'cancan'
 gem 'devise'
@@ -26,12 +26,11 @@ group :development do
 end
 
 group :development, :test do
-  gem 'cucumber-rails'
   gem 'rspec-rails'
-  gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'spork-rails'
 end
 
 group :test do
+  gem 'cucumber-rails'
   gem 'database_cleaner'
 end
